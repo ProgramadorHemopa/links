@@ -1,0 +1,59 @@
+.conteiner{
+  margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  margin: auto;
+  width: 260px;
+  height: 125px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}
+.conteiner:hover{
+  cursor: pointer;
+  
+}
+.drop{
+  border-radius: 0% 55% 50% 50%;
+  box-shadow: inset -25% 10% 0% -10% #ff0202f1;
+  
+}
+
+@keyframes anim-drop {
+  0%{
+    height: 13px;
+    width: 13px;
+    background-color: red;
+    transform: translate(5px, 5px)
+  }
+  25%{
+    height: 13px;
+    width: 13px;
+    background-color: red;
+    transform: translate(250px, 5px);
+  }
+  50%{
+    height: 13px;
+    width: 13px;
+    background-color: red;
+    transform: translate(250px, 115px);
+  }
+  75%{
+    height: 13px;
+    width: 13px;
+    background-color: red;
+    transform: translate(5px, 115px);  
+  }
+  100%{
+    height: 13px;
+    width: 13px;
+    background-color: red;
+    transform: translate(5px, 5px);  
+  }
+}
+@keyframes anim-stopDrop{
+  0%{
+    width: 0px;
+    height: 0px;
+    background-color: #000000;
+  }
+}

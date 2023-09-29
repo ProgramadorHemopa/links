@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="HEMOPA, Pará, painel, intranet">
+        <meta name="author" content="Carlos Souza">
+
+        <title>HEMOPA - Hemocentro do Pará!</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Font Awesome CSS -->
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+<!-- 	    <link href="css/fontawesome-all.css" rel="stylesheet">
+ -->
+
+	
+        <!-- Custom CSS -->
+        <link href="css/animate.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+
+        <!-- Template js -->
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/jquery.appear.js"></script>
+        <script src="js/contact_me.js"></script>
+        <script src="js/jqBootstrapValidation.js"></script>
+        <script src="js/modernizr.custom.js"></script>
+        <script src="js/script.js"></script>
+
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+		<script>
+		
+		function contaLink(valor){
+		
+			console.log(valor);
+			$.ajax({
+				type: "POST",
+				url: "teste.php",
+				data:   {
+							caminho : valor
+						},
+				cache: false
+			});
+		}
+		</script>
+    </head>
+
+    <body>
+
+        <!-- Início Logo -->
+        <section id="logo-section" class="text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="logo text-center">
+                            <br>
+                            <!--<img src="images/sead/logoSead1.png" class="img-responsive center-block" alt="...">-->
+                            <!--                            <h1>SEAD</h1>-->
+                            <h2 style="color: black;"><i><b style="font-size:40px;color:#660000;font-family: Impact !important;text-shadow: #999 1px 2px 2px;">Painel de Sistemas</b></i></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fim Logo -->
+
+
+        <!-- Início Main Body  -->
+        <div class="mainbody-section text-center">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-3">
+
+                        <div class="menu-item blue">
+                            <a href="http://10.95.2.9/gs" data-toggle="modal" onclick="contaLink('contadores/hemoservice.txt')">
+                                <i class="fa fa-bullseye"></i>
+                                <p>Hemo Service</p>
+                            </a>
+                        </div>
+
+                        <div class="menu-item green">
+                            <a href="http://www.hemopa.pa.gov.br/moodle" data-toggle="modal" onclick="contaLink('contadores/moodle.txt')">
+                                <i class="fa fa fa-graduation-cap"></i>
+                                <p>Aprendizagem Colaborativo</p>
+                            </a>
+                        </div>
+
+                        <div class="menu-item light-red">
+                            <a href="http://10.95.3.66/SisGNCWeb/" data-toggle="modal" onclick="contaLink('contadores/limesurvey.txt')">
+                                <i class="fa fa-exclamation-triangle"></i>
+                                <p>Não Conformidade</p>
+                            </a>
+                        </div>
+						
+						<div class="menu-item blue">
+                            <a href="http://10.95.3.66/SisGDWeb/" data-toggle="modal" onclick="contaLink('contadores/limesurvey.txt')">
+                                <i class="fa fa-file-text"></i>
+                                <p>Doc-Web Gestão de Documento</p>
+                            </a>
+                        </div>
+						
+							<div class="menu-item blue">
+                            <a href="http://10.95.3.66/SisGEAPE/" data-toggle="modal" onclick="contaLink('contadores/limesurvey.txt')">
+                       <i class="fa fa-calendar-plus-o"></i>
+					   <p>Justificativa Ponto</p>
+                            </a>
+                        </div>
+						
+				
+					
+                    </div>
+
+                    <div class="col-md-6">
+
+                         <div class="row">
+							<div class="col-md-12">
+                                    <a href="http://www.hemopa.pa.gov.br/" >   <img src="images/about-04.jpg" style="height:141px !important; width: 555px !important; margin-bottom: 30px;box-shadow: 3px 5px 15px #6E6E6E;" class="img-responsive" alt=""></a>
+                            </div>
+						
+							
+							
+							<!--
+							<div class="col-md-12">
+                                    <a href="http://10.95.3.201/limesurvey/index.php/673772/lang-pt-BR">   <img src="images/pesquisa.png" style="height:141px !important; width: 555px !important; margin-bottom: 30px;box-shadow: 3px 5px 15px #6E6E6E;" class="img-responsive" alt=""></a>
+                            </div>
+							-->
+							
+							<div class="col-md-6">
+                                <div class="menu-item purple responsive">
+                                    <a href="http://10.95.3.201/links/pac.htm" data-toggle="modal" onclick="contaLink('contadores/calendario.txt')">
+                                        <i class="fa fa-calendar-plus-o"></i>
+                                        <p>Treinamento</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="menu-item blue responsive-2">
+                                    <a href="http://10.95.3.201/links/ListaRamais.pdf" data-toggle="modal" onclick="contaLink('contadores/ramais.txt')">
+                                        <i class="fa fa-list-alt"></i>
+                                        <p>Ramais</p>
+                                    </a>
+                                </div>
+                            </div>
+						
+                            <div class="col-md-6">
+                                <div class="menu-item color responsive">
+                                    <a href="http://10.95.3.4/sisgeapeDesenv/" data-toggle="modal" onclick="contaLink('contadores/sisgeape.txt')">
+                                        <i class="fa fa-inbox"></i>
+                                        <p>SISGEAPE</p>
+                                    </a>
+                                </div>
+								
+								<div class="menu-item light-red">
+									<a href="http://10.95.2.30/sbs/" data-toggle="modal" onclick="contaLink('c ontadores/sbs.txt')">
+										<i class="fa fa-bullseye"></i>
+										<p>SBS.web</p>
+									</a>
+								</div>										
+                            </div>
+							
+							
+
+                            <div class="col-md-6">
+                                <div class="menu-item light-orange responsive-2">
+                                    <a href="https://www.sistemas.pa.gov.br/governodigital/public/main/index.xhtml" data-toggle="modal" onclick="contaLink('contadores/eprotocolo.txt')">
+                                        <i class="fa fa-file-o"></i>
+                                        <p>E Protocolo</p>
+                                    </a>
+                                </div>
+								
+								<div class="menu-item green">
+									<a href="http://10.95.3.66/SisADWeb/" data-toggle="modal" onclick="contaLink('contadores/moodle.txt')">
+										<i class="fa fa-pencil-square-o"></i>
+										<p>Avaliação de Desempenho</p>
+									</a>
+								</div>	
+														
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <div class="menu-item light-red">
+                            <a href="https://www.sistemas.pa.gov.br/portaldoservidor/form_login.php?s=Y29udHJhY2hlcXVl" data-toggle="modal" onclick="contaLink('contadores/contracheque.txt')">
+                                <i class="fa fa-money"></i>
+                                <p>Contra Cheque</p>
+                            </a>
+                        </div>
+
+                        <div class="menu-item color">
+                            <a href="https://mail.pa.gov.br" data-toggle="modal" onclick="contaLink('contadores/email.txt')">
+                                <i class="fa fa-envelope-square"></i>
+                                <p>E-mail</p>
+                            </a>
+                        </div>
+
+                        <div class="menu-item purple">
+                            <a href="http://www2.sead.pa.gov.br:7777/forms/frmservlet?config=archonj" data-toggle="modal" onclick="contaLink('contadores/sigirh.txt')">
+                                <i class="fa fa-pencil-square-o"></i>
+                                <p>SIGIRH</p>
+                            </a>
+                        </div>
+							<div class="menu-item blue responsive-2">
+									<a href="http://10.95.3.66/SisRCWeb/" data-toggle="modal" onclick="contaLink('contadores/moodle.txt')">
+										<i class="fa fa-book"></i>
+										<p>Relatórios Complementares SBS</p>
+									</a>
+								</div>		
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fim Main Body-->
+
+        <!-- Início Copyright  -->
+        <div class="copyright text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div>Centro de Hemoterapia e Hematologia do Estado do Pará</div>
+                        <div>HEMOPA - 2018</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fim Copyright  -->
+
+    </body>
+
+</html>
